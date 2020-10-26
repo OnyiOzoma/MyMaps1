@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         dialog.getButton(DialogInterface.BUTTON_POSITIVE).setOnClickListener{
             val title = mapFormView.findViewById<EditText>(R.id.etTitle).text.toString()
             if (title.trim().isEmpty()){
-                Toast.makeText(this, "Place must have non-empty title", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Map must have a non-empty title", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
             //Navigate to create map activity now

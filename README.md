@@ -30,6 +30,10 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 While working on this, I found it difficult to properly call the map api as I was seeking to render the map. I also found it a challenge to make sure the dialog box did not crash the app.
+I later discovered that the app kept crashing due to a typo in the edit text ID for the title pop-up.
+Minute mistakes like this that take hours to recognize are something I actually do find humorous when it comes
+to coding (I have a freshman year story about a 4 hour typo over a comma that is now funny).
+I later learned that my maps were not working primarily due to needing to manually go into Google APIs and enable it - I was assuming everything was done, so over time was able to debug and fix this.
 
 ## License
 

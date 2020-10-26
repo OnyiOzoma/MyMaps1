@@ -7,7 +7,7 @@
     android:paddingEnd="15dp">
 
     <EditText
-        android:id="@+id/et.Title"
+        android:id="@+id/etTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
