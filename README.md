@@ -23,7 +23,7 @@ The following **extensions** are implemented:
 
 Here's a walkthrough of implemented user stories, particularly how a map is added:
 
-<img src= https://j.gifs.com/gZgA5r.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src= https://j.gifs.com/gZgA5r.gif title='Video Walkthrough' width='200px' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
