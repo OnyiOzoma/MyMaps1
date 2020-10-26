@@ -5,9 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?attr/selectableItemBackground"
+    android:fontFamily="serif-monospace"
     android:orientation="vertical"
     android:padding="10dp"
+    android:textAllCaps="true"
+    android:textColor="#0EC1D8"
     android:textSize="24sp"
-    tools:text="Singapore Itinerary!">
+    android:textStyle="bold"
+    tools:text="Singapore Itinerary! count = ">
 
 </TextView>

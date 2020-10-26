@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView
 import androidx.recyclerview.widget.RecyclerView
 import edu.stanford.onyi98.mymaps.models.UserMap
+import java.nio.file.Files.size
 
 private const val TAG = "MapsAdapter"
 class MapsAdapter(val context: Context, val userMaps: List <UserMap>, val onClickListener: OnClickListener) : RecyclerView.Adapter<MapsAdapter.ViewHolder>() {
