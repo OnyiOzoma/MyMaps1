@@ -21,7 +21,7 @@ The following **extensions** are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented user stories, particularly how a map is added:
 
 <img src='https://j.gifs.com/gZgA5r.giff' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
