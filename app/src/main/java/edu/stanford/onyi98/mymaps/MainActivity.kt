@@ -1,5 +1,6 @@
 package edu.stanford.onyi98.mymaps
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +10,10 @@ import edu.stanford.onyi98.mymaps.models.Place
 import edu.stanford.onyi98.mymaps.models.UserMap
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 const val EXTRA_USER_MAP = "EXTRA_USER_MAP"
+const val EXTRA_MAP_TITLE = "EXTRA_MAP_TITLE"
+private const val REQUEST_CODE = 6478
 private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,9 +35,20 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-
+        fabCreateMap.setOnClickListener{
+            Log.i(TAG, "Tap on FAB")
+            val intent = Intent(this@MainActivity, CreateMapActivity::class.java)
+            intent.putExtra(EXTRA_USER_MAP, userMaps[position])
+            startActivityForResult(intent, REQUEST_CODE)
+        }
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        if (requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK) {
+            // Get new map data from the data
+        }
+        super.onActivityResult(requestCode, resultCode, data)
+    }
     private fun generateSampleData(): List<UserMap> {
         return listOf(
             UserMap(
